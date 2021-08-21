@@ -1,0 +1,50 @@
+/**
+HEADER - CSS
+ */
+
+body {
+    margin: auto;
+    background-color: black;
+}
+
+/* Define header */
+header {
+    font-family: 'dayrom', sans-serif;
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+/* Website Logo */
+.imgSite {
+    margin: 0 0 0 20px;
+    align-items: baseline;
+    display: flex;
+    left: 20px;
+}
+
+/* Define menu */
+nav ul {
+    display: flex;
+    text-align: right;
+    list-style-type: none;
+}
+
+nav li {
+    margin-right: 100px;
+}
+
+nav a {
+    font-size: 1em;
+    color: #c9baba;
+    padding-bottom: 3px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(211, 208, 16);
+    text-decoration: underline 2px;
+}

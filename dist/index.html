@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="carouselStyle.css">
+    <link rel="stylesheet" href="modalStyle.css">
+    <link rel="stylesheet" href="headerStyle.css">
+    <link rel="stylesheet" href="indexStyle.css">
+    <script src="main.js" async></script>
+    <title>Test NPM</title>
+</head>
+<body>
+
+<header>
+    <div id="imgSite">
+        <p><img src="SmallJustStreamIt.png" alt="Logo JustStreamIt" class="logoSite"></p>
+    </div>
+    <nav id="navigation">
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Catégorie</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="featured_movie img_film">
+    <div class="featured_frame ">
+    </div>
+    <div class="featured_infos">
+        <!-- insert title - country - duration - description -->
+    </div>
+</div>
+
+<div class="movie_carousel">
+    <h2 class="title">Meilleurs films toutes catégories</h2>
+    <div class="best_movie"></div>
+
+    <h2 class="title">Catégorie Aventures</h2>
+    <div class="adventure"></div>
+
+    <h2 class="title">Catégorie Drames</h2>
+    <div class="drama"></div>
+
+    <h2 class="title">Catégorie Comédies</h2>
+    <div class="comedy"></div>
+</div>
+
+<aside id="modal1" class="modal" aria-hidden="true" aria-modal="false" style="display: none;">
+    <div class="modal_wrapper js-modal-stop">
+        <button class="js-modal-close">Retour ></button>
+        <div class="movie">
+            <img id="modal_movie_image" src="" alt="affiche film">
+            <div class="infos_movie">
+                <!-- display all information of film in modal window -->
+            </div>
+        </div>
+    </div>
+</aside>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+/**
+CAROUSEL - CSS
+ */
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__container {
+    transition: transform 0.3s;
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel__container ::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.carousel__item {
+    float: left;
+    cursor: pointer;
+}
+
+.carousel__item:hover {
+    transform: scale(1.25);
+    transition: 0.3s;
+}
+
+.carousel__next,
+.carousel__prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: white url("right.png") center center no-repeat;
+    background-size: 20px 20px;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -20px;
+    right: 20px;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.carousel__prev {
+    right: auto;
+    background-image: url("left.png");
+}
+
+.carousel__prev--hidden,
+.carousel__next--hidden {
+    opacity: 0;
+}
+
+.carousel__next:hover,
+.carousel__prev:hover {
+    transform: scale(1.2);
+}
